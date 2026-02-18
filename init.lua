@@ -509,7 +509,7 @@ require('lazy').setup({
       --  See `:help lsp-config` for information about keys and how to configure
       local servers = {
         -- clangd = {},
-        -- gopls = {},
+        gopls = {},
         -- pyright = {},
         -- rust_analyzer = {},
         --
@@ -531,6 +531,7 @@ require('lazy').setup({
       vim.list_extend(ensure_installed, {
         'lua_ls', -- Lua Language server
         'stylua', -- Used to format Lua code
+        'gopls',
         -- You can add other tools here that you want Mason to install
       })
 
